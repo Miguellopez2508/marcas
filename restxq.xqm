@@ -41,7 +41,7 @@ function page:start(
 			<p>NOTICIAS PRINCIPALES</p>
       
 		</div>
-		<div> {page:nombreFuncion()}</div>
+		<div> {page:nombreFuncion2()}</div>
 	</div>
 
 	
@@ -58,9 +58,21 @@ function page:start(
 
 declare function page:nombreFuncion(){
   
-  let $doc := doc ("https://es.digitaltrends.com/videojuego/feed")
+  let $doc := doc ("https://www.cochesyconcesionarios.com/rss/marcas/coches-kmcero.xml")
   for $item in $doc //item
   return
   <p> {($item//title/text())} </p>
+  
+};
+
+declare function page:nombreFuncion2(){
+  
+  let $doc := doc ("http://www.f1latam.com/rss/rss.php")
+  for $title in $doc//item/title/text()
+  for $date in $doc//pubDate
+  for $des in $doc//item/description
+  for $url in $doc//link/text()
+  return
+  <p> {$title} <br></br> {$des} Fecha:  {$date}  <br></br> <a href="{$url}"> link... </a> </p>
   
 };
