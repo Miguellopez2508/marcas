@@ -26,6 +26,8 @@ function page:start(
          <a href="/temp"> link a la pagina</a>
          {page:nombreFuncion()}
      </p>  
+     
+     <p> hola </p>
     </body>
   </html>
 };
