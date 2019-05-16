@@ -25,6 +25,15 @@ div#Columna2
 	
 }
 
+.noticia{
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px;
+}
+
+.noticia h2{
+    background-color: lightgray;
+}
 
 body 
 {
@@ -36,12 +45,7 @@ body
 
 section  p { 
 
-	text-align: center;
-	
-	height: 40px;
-	padding-left: 1.8em;
-	text-transform: uppercase;
-	font-size:1.5em;
+
   
 }
 
@@ -84,8 +88,12 @@ header p
 
 div h1
 {
-		font-family: "Arial" , Calibri , Helvetica, sans-serif;
-		color: blue;
+    text-align: center;
+	
+	height: 40px;
+	padding-left: 1.8em;
+	text-transform: uppercase;
+	font-size:1.5em;
 }
 
 
