@@ -1,54 +1,50 @@
-
- 
-
-div#Columna1
-{ 
-	float: left;
-	text-align:left;
-	font-size: 15px;    
-    padding: 20px;
-	width: 30%;
-	font-family: "Calibri" , Arial, Helvetica, sans-serif;
-	display:block;
-    
-}
-	
-div#Columna2
-{ 
-	float: right;
-	width: 45%;
-	text-align:center;
-	padding-right: 20px;
-	font-size: 17px;    
-    padding: 20px;
-	font-family: "Calibri" , Arial, Helvetica, sans-serif;
-	
-}
-
-.noticia{
-    background-color: lightgray;
-    padding: 10px;
-    margin: 10px;
-}
-
-.noticia h2{
-    background-color: lightgray;
-}
-
 body 
 {
 	margin: 0;
 	margin-bottom: 40px;
 	background-color: #666666;
-	 
+    font-family: "Arial";
 }
 
+.logo{
+    position: relative;
+    width: 400px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: 80px; 
+  color: #FF4500;
+}
 
+.logoP1{
+    margin: 0px;
+    position: absolute;
+    padding: 0px;
+    letter-spacing: -10;
+    left: 100px;
+    top: 20px;
+}
 
-section  p { 
+.logoP2{
+    margin: 0px;
+    position: absolute;
+    padding: 0px;
+    top: 50px;
+    left: 70px;
+    letter-spacing: 10;
+}
 
+.logoP3{
+    height: 100%;
+}
 
-  
+.logoP4{
+    font-variant: small-caps;
+    position: relative;
+    top: 20px;
+    color: #222222;
+   
 }
 
 footer 
@@ -63,6 +59,8 @@ footer
 #links{
     background-color: #555555;
     font-size: 30;
+    margin-left: auto;
+    margin-right: auto;
 }
 #links ul{
     list-style: none;
@@ -73,11 +71,11 @@ footer
     border-color: black;
     padding: 10px;
     background-color: #bb2222;
-    color: #cccccc
+    color: #cccccc;
 }
 
-.verde {
-    color: green;
+#links li.verde {
+    color: #22bb55;
 }
 
 header
@@ -85,22 +83,6 @@ header
   background: url("banner.jpg") no-repeat center;
   height: 190px;
   background-color: black;
-  
-}
-
-header p
-{
-  text-align:center;
-  font-size: 80px; 
-  text-shadow: 0.3em 0.3em 0.3em black;
-  font-family: "Times New Roman", Helvetica , sans-serif;
-  color: #FF4500;
-  width: 100%;
-  padding: 20px;
-  margin: 0;
-  top: 2em;
-  left: 1em;
- 
 }
 
 div h1

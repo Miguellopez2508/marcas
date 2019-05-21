@@ -23,19 +23,25 @@ function page:start(
     </head>
     <body>
      	
-  <header>  
-			<p> Mundo Motor  </p> 
+  <header>
+      
+			<div class="logo">
+                <p class="logoP2">M<span class="logoP4">o</span>t<span class="logoP4">o</span>r</p>
+                <p class="logoP1">Mund<span class="logoP4">o</span></p>
+                <img class="logoP3" src="static/carreteraLogo.png"/>
+            </div>
+      
   </header>
   
         <div id="links">
         <ul>
             <li>Inicio</li>
-            <li> <a href="/"> Formula1 </a></li>
-            <li> <a href="/temp"> Audi </a></li>
+            <li>Formula 1</li>
+            <li>Ultimo modelo</li>
             <li class="verde">Mundo electrico</li>
-            
         </ul>
     </div>
+	
 	
 	
 	<div id="contenedor">
@@ -54,6 +60,9 @@ function page:start(
   
     </body>
   </html>
+  
+  
+  
 };
 
 declare function page:nombreFuncion(){
