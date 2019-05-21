@@ -38,10 +38,10 @@ function page:start(
 		</div>
 
 		<div id="principal">
-			<p>NOTICIAS PRINCIPALES</p>
-      
+			<h1>NOTICIAS PRINCIPALES</h1>
+			<div> {page:nombreFuncion2()}</div>
 		</div>
-		<div> {page:nombreFuncion2()}</div>
+		
 	</div>
 
 	
