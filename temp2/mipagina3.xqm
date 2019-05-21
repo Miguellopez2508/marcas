@@ -37,6 +37,8 @@ function page:start(
         <ul>
             <li>Inicio</li>
             <li> <a href="/"> Formula1 </a></li>
+             <li> <a href="/temp3"> Formula2 </a></li>
+             <li> <a href="/temp4"> Nascar </a></li>
             <li> <a href="/temp"> Audi </a></li>
             <li class="verde"><a href="/temp2"> Noticias generales </a></li>
         </ul>
@@ -48,7 +50,7 @@ function page:start(
 
 		<div id="principal">
 			<h1>NOTICIAS PRINCIPALES</h1>
-				<div> {page:pagina3()}</div>
+				<div> {page:noticiasGenerales()}</div>
 		</div>
 		
 	</div>
@@ -62,7 +64,7 @@ function page:start(
   </html>
 };
 
-declare function page:pagina3(){
+declare function page:noticiasGenerales(){
   
   let $doc := doc ("https://elcomercio.pe/feed/ruedas-tuercas")
   

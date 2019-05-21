@@ -9,7 +9,7 @@ module namespace page = 'http://basex.org/modules/web-page';
  : @return HTML page
  :)
 declare
-  %rest:path("")
+  %rest:path("temp3")
   %output:method("xhtml")
   %output:omit-xml-declaration("no")
   %output:doctype-public("-//W3C//DTD XHTML 1.0 Transitional//EN")
@@ -50,7 +50,7 @@ function page:start(
 
 		<div id="principal">
 			<h1>NOTICIAS PRINCIPALES</h1>
-			<div> {page:formula1()}</div>
+			<div> {page:formula2()}</div>
 		</div>
 		
 	</div>
@@ -76,9 +76,9 @@ declare function page:nombreFuncion(){
   
 };
 
-declare function page:formula1(){
+declare function page:formula2(){
   
-  let $doc := doc ("http://www.f1latam.com/rss/rss.php")
+  let $doc := doc ("https://www.autosport.com/rss/feed/f3")
   
   for $item in $doc//item
 
