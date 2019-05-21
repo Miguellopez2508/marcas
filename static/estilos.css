@@ -40,8 +40,7 @@ body
 	margin: 0;
 	margin-bottom: 40px;
 	background-color: #666666;
-  color: pink;
-	
+	 
 }
 
 
@@ -64,6 +63,25 @@ footer
     text-align: center;
 	
 	
+}
+
+#links{
+    background-color: #555555;
+    font-size: 30;
+}
+#links ul{
+    list-style: none;
+}
+#links li{
+    display: inline-block;
+    border-color: black;
+    padding: 10px;
+    background-color: #bb2222;
+    color: #cccccc
+}
+
+.verde {
+    color: green;
 }
 
 header
@@ -94,9 +112,9 @@ div h1
     text-align: center;
 	
 	height: 40px;
-	padding-left: 1.8em;
 	text-transform: uppercase;
-	font-size:1.5em;
+	font-size:1em;
+    color: red;
 }
 
 
@@ -114,14 +132,15 @@ div#Columna3
 }
 
 #contenedor{
-width: 1500px;
+width: 1200px;
 margin: auto;
 }
 
 #lateral{
 width: 150px;  /*Este será el ancho que tendrá tu columna*/
 background-color: #CCCCCC;  /*Aquí pon el color del fondo que quieras para este lateral*/
-float:left; /*Aqui determinas de lado quieres quede esta "columna" */
+	margin-left:20px;
+	margin-right:auto;
 }
 
 #principal{

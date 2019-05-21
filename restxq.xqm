@@ -16,7 +16,7 @@ declare
   %output:doctype-system("http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd")
 function page:start(
 ) as element(Q{http://www.w3.org/1999/xhtml}html) {
-  <html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
       <title>BaseX HTTP Services</title>
       <link rel="stylesheet" type="text/css" href="static/estilos.css"/>
@@ -29,13 +29,17 @@ function page:start(
   
   <section> 
 	
-	
+	<div id="links">
+        <ul>
+            <li>Inicio</li>
+            <li>Formula 1</li>
+            <li>Ultimo modelo</li>
+            <li class="verde">Mundo electrico</li>
+        </ul>
+      
+    </div>
 	
 	<div id="contenedor">
-
-		<div id="lateral">
-			<p>Aquí ira el contenido alineado a la izquierda</p>
-		</div>
 
 		<div id="principal">
 			<h1>NOTICIAS PRINCIPALES</h1>
