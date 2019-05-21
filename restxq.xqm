@@ -36,8 +36,8 @@ function page:start(
         <div id="links">
         <ul>
             <li>Inicio</li>
-            <li>Formula 1</li>
-            <li>Ultimo modelo</li>
+            <li> <a href="/"> Formula1 </a></li>
+            <li> <a href="/temp"> Audi </a></li>
             <li class="verde">Mundo electrico</li>
         </ul>
     </div>
