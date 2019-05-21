@@ -79,13 +79,13 @@ declare function page:nombreFuncion2(){
   
   <p> 
   
-    <h1> {$item/title/text()} </h1> <br></br>  
+    <h1> {$item/title/text()} </h1> <br/>  
     
-    Fecha: {$item/pubDate/text()} <br></br>
+    Fecha: {$item/pubDate/text()} <br/>
     
-    <h2> <strong>Descripcion: </strong> {$item/description/text()}</h2> <br></br> 
+    <h2> {$item/description/text()}</h2> 
     
-    <a href="{$item/guid/text()}"> linkkk </a> 
+    <a href="{$item/guid/text()}"> más info... </a> 
   
   </p>
 
