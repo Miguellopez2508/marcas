@@ -38,7 +38,7 @@ function page:start(
             <li>Inicio</li>
             <li> <a href="/"> Formula1 </a></li>
             <li> <a href="/temp"> Audi </a></li>
-            <li class="verde">Mundo electrico</li>
+            <li class="verde"> <a href="/temp2"> Noticias generales </a></li>
         </ul>
     </div>
 	

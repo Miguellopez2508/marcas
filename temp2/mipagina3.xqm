@@ -9,7 +9,7 @@ module namespace page = 'http://basex.org/modules/web-page';
  : @return HTML page
  :)
 declare
-  %rest:path("temp")
+  %rest:path("temp2")
   %output:method("xhtml")
   %output:omit-xml-declaration("no")
   %output:doctype-public("-//W3C//DTD XHTML 1.0 Transitional//EN")
@@ -48,7 +48,7 @@ function page:start(
 
 		<div id="principal">
 			<h1>NOTICIAS PRINCIPALES</h1>
-				<div> {page:audi()}</div>
+				<div> {page:pagina3()}</div>
 		</div>
 		
 	</div>
@@ -62,9 +62,9 @@ function page:start(
   </html>
 };
 
-declare function page:audi(){
+declare function page:pagina3(){
   
-  let $doc := doc ("https://www.cochesyconcesionarios.com/rss/audi/noticias.xml")
+  let $doc := doc ("https://elcomercio.pe/feed/ruedas-tuercas")
   
   for $item in $doc//item
 
