@@ -115,15 +115,20 @@ div h1
 
 
 #contenedor{
-width: 1200px;
-margin: auto;
+width: 800px;
+height: 100%;
+margin-left:auto; /*Este margen hace que no se encime el contenido en tu menúlateral, es     importante que pongas un pocos pixeles más que el ancho  de tu columna lateral*/
+margin-right: auto;
+margin-top: 40px;
+margin-bottom: 40px;
 }
 
 #principal{
-margin-left:300px; /*Este margen hace que no se encime el contenido en tu menúlateral, es     importante que pongas un pocos pixeles más que el ancho  de tu columna lateral*/
+margin-left:auto; /*Este margen hace que no se encime el contenido en tu menúlateral, es     importante que pongas un pocos pixeles más que el ancho  de tu columna lateral*/
+margin-right: auto;
 background-color: #FFFFFF;
-font-size: 25px;  
-height: 2000px;
+font-size: 20px;  
 border:#000000 1px solid; /*ponemos un dorde para que se vea bonito*/
+padding: 20px;
 }
 
