@@ -27,17 +27,15 @@ function page:start(
 			<p> Mundo Motor  </p> 
   </header>
   
-  <section> 
-	
-	<div id="links">
+        <div id="links">
         <ul>
             <li>Inicio</li>
             <li>Formula 1</li>
             <li>Ultimo modelo</li>
             <li class="verde">Mundo electrico</li>
         </ul>
-      
     </div>
+	
 	
 	<div id="contenedor">
 
@@ -48,12 +46,9 @@ function page:start(
 		
 	</div>
 
-	
-   </section>
-
 	<footer>  Autores: Asier Salicio, Lander Arellano, Miguel Lopez
-	<br> Email: mundo.motor@gmail.com </br>
-	<br> Fecha de creación: 23/5/2019  </br>
+	<br/> Email: mundo.motor@gmail.com
+	<br/> Fecha de creación: 23/5/2019
 	</footer>
   
     </body>
