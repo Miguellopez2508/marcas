@@ -41,7 +41,7 @@ function page:start(
 
 		<div id="principal">
 			<h1>NOTICIAS PRINCIPALES</h1>
-			<div> {page:nombreFuncion2()}</div>
+			<div> {page:formula1()}</div>
 		</div>
 		
 	</div>
@@ -64,7 +64,7 @@ declare function page:nombreFuncion(){
   
 };
 
-declare function page:nombreFuncion2(){
+declare function page:formula1(){
   
   let $doc := doc ("http://www.f1latam.com/rss/rss.php")
   
