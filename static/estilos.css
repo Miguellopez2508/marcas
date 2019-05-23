@@ -67,15 +67,13 @@ footer
     margin: auto;
 }
 #links li{
+    transition: transform 1s ease-out;
     display: inline-block;
     border-color: black;
     padding: 10px;
     background-color: #bb2222;
     color: #cccccc;
-}
-
-#links li.verde {
-    color: #22bb55;
+    
 }
 
 header
@@ -83,6 +81,11 @@ header
   background: url("banner.jpg") no-repeat center;
   height: 190px;
   background-color: black;
+}
+
+#links li:hover{
+  transform: scale(1.1);
+  background-color: darkorange;
 }
 
 div h1

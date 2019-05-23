@@ -36,11 +36,11 @@ function page:start(
         <div id="links">
         <ul>
             <li>Inicio</li>
-            <li> <a href="/formula1"> Formula1 </a></li>
-            <li> <a href="/formula2"> Formula2 </a></li>
-            <li> <a href="/nascar"> Nascar </a></li>
-            <li> <a href="/audi"> Audi </a></li>
-            <li class="verde"> <a href="/noticias"> Noticias generales </a></li>
+            <a href="/formula1"><li>Formula1</li></a>
+            <a href="/formula2"><li>Formula2</li></a>
+            <a href="/nascar"><li>Nascar</li></a>
+            <a href="/audi"><li>Audi</li></a>
+            <a href="/noticias"><li> Noticias generales</li></a>
         </ul>
     </div>
 	

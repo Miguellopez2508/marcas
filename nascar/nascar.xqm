@@ -9,7 +9,7 @@ module namespace page = 'http://basex.org/modules/web-page';
  : @return HTML page
  :)
 declare
-  %rest:path("nascar")
+  %rest:path("temp4")
   %output:method("xhtml")
   %output:omit-xml-declaration("no")
   %output:doctype-public("-//W3C//DTD XHTML 1.0 Transitional//EN")
@@ -33,14 +33,14 @@ function page:start(
       
   </header>
   
-        <div id="links">
+    <div id="links">
         <ul>
             <li>Inicio</li>
-            <li> <a href="/formula1"> Formula1 </a></li>
-            <li> <a href="/formula2"> Formula2 </a></li>
-            <li> <a href="/nascar"> Nascar </a></li>
-            <li> <a href="/audi"> Audi </a></li>
-            <li class="verde"> <a href="/noticias"> Noticias generales </a></li>
+            <a href="/formula1"><li>Formula1</li></a>
+            <a href="/formula2"><li>Formula2</li></a>
+            <a href="/nascar"><li>Nascar</li></a>
+            <a href="/audi"><li>Audi</li></a>
+            <a href="/noticias"><li> Noticias generales</li></a>
         </ul>
     </div>
 	
