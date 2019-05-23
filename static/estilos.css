@@ -2,7 +2,8 @@ body
 {
 	margin: 0;
 	margin-bottom: 40px;
-	background-color: #666666;
+    background: url("https://www.radiorioja.es/wp-content/uploads/2018/04/75079878.jpg") no-repeat center;
+    background-size: cover;
     font-family: "Arial";
 }
 
@@ -14,7 +15,7 @@ body
     margin-right: auto;
     
     font-size: 80px; 
-  color: #FF4500;
+    color: #FF4500;
 }
 
 .logoP1{
@@ -66,6 +67,7 @@ footer
     list-style: none;
     margin: auto;
 }
+
 #links li{
     transition: transform 1s ease-out;
     display: inline-block;
@@ -73,7 +75,6 @@ footer
     padding: 10px;
     background-color: #bb2222;
     color: #cccccc;
-    
 }
 
 header
@@ -84,8 +85,8 @@ header
 }
 
 #links li:hover{
-  transform: scale(1.1);
-  background-color: darkorange;
+    transform: scale(1.1);
+    background-color: darkorange;
 }
 
 div h1
@@ -100,20 +101,40 @@ div h1
 
 
 #contenedor{
-width: 800px;
-height: 100%;
-margin-left:auto; /*Este margen hace que no se encime el contenido en tu menúlateral, es     importante que pongas un pocos pixeles más que el ancho  de tu columna lateral*/
-margin-right: auto;
-margin-top: 40px;
-margin-bottom: 40px;
+    width: 800px;
+    height: 100%;
+    margin-left:auto; /*Este margen hace que no se encime el contenido en tu menúlateral, es     importante que pongas un pocos pixeles más que el ancho  de tu columna lateral*/
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #principal{
-margin-left:auto; /*Este margen hace que no se encime el contenido en tu menúlateral, es     importante que pongas un pocos pixeles más que el ancho  de tu columna lateral*/
-margin-right: auto;
-background-color: #FFFFFF;
-font-size: 20px;  
-border:#000000 1px solid; /*ponemos un dorde para que se vea bonito*/
-padding: 20px;
+    margin-left:auto; /*Este margen hace que no se encime el contenido en tu menúlateral, es     importante que pongas un pocos pixeles más que el ancho  de tu columna lateral*/
+    margin-right: auto;
+    background-color: #FFFFFF88;
+    font-size: 20px;  
+    border-radius: 15px;
+    padding: 30px;
+
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
+#panelInicio{
+    margin-left:auto;
+    margin-right: auto;
+    width: 400px;
+    height: 33.33%;
+    //background-color: aqua;
+    text-align: center;
+}
+
+#panelInicio a{
+    color: #FFFFFF;
+    border: 1px solid;
+    border-color: #FFFFFF;
+    padding: 20px;
+    font-size: 20px;
+}

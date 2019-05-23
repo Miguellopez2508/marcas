@@ -9,7 +9,7 @@ module namespace page = 'http://basex.org/modules/web-page';
  : @return HTML page
  :)
 declare
-  %rest:path("nascar")
+  %rest:path("inicio")
   %output:method("xhtml")
   %output:omit-xml-declaration("no")
   %output:doctype-public("-//W3C//DTD XHTML 1.0 Transitional//EN")
@@ -33,9 +33,9 @@ function page:start(
       
   </header>
   
-    <div id="links">
+        <div id="links">
         <ul>
-            <a href="/inicio"><li>Inicio</li></a>
+            <li>Inicio</li>
             <a href="/formula1"><li>Formula1</li></a>
             <a href="/formula2"><li>Formula2</li></a>
             <a href="/nascar"><li>Nascar</li></a>
@@ -49,8 +49,11 @@ function page:start(
 	<div id="contenedor">
 
 		<div id="principal">
-			<h1>NOTICIAS PRINCIPALES</h1>
-			<div> {page:nascar()}</div>
+			<h1>Inicio</h1>
+			<div>  {page:formula1()} </div>
+			<div>  {page:formula2()} </div>
+			<div>  {page:nascar()} </div>
+			<div>  {page:noticiasGenerales()} </div>
 		</div>
 		
 	</div>
@@ -63,24 +66,36 @@ function page:start(
     </body>
   </html>
   
-  
-  
 };
 
-declare function page:nombreFuncion(){
+ declare function page:formula1(){
   
-  let $doc := doc ("https://www.cochesyconcesionarios.com/rss/marcas/coches-kmcero.xml")
-  for $item in $doc //item
+  let $doc := doc ("http://www.f1latam.com/rss/rss.php")
+  
+  for $item in $doc//item[1]
+
   return
-  <p> {($item//title/text())} </p>
+  
+  <p> 
+  
+    <h1> {$item/title/text()} </h1> <br/>  
+    
+    Fecha: {$item/pubDate/text()} <br/>
+    
+    <h2> {$item/description/text()}</h2> 
+    
+    <a href="{$item/guid/text()}"> más info... </a> 
+    
+  
+  </p> 
   
 };
 
-declare function page:nascar(){
+declare function page:formula2(){
   
-  let $doc := doc ("https://www.autosport.com/rss/feed/nascar")
+  let $doc := doc ("https://www.autosport.com/rss/feed/f3")
   
-  for $item in $doc//item
+  for $item in $doc//item[1]
 
   return
   
@@ -97,5 +112,50 @@ declare function page:nascar(){
   
   </p>
 
+};
+
+declare function page:nascar(){
+  
+  let $doc := doc ("https://www.autosport.com/rss/feed/nascar")
+  
+  for $item in $doc//item[1]
+
+  return
+  
+  <p> 
+  
+    <h1> {$item/title/text()} </h1> <br/>  
+    
+    Fecha: {$item/pubDate/text()} <br/>
+    
+    <h2> {$item/description/text()}</h2> 
+    
+    <a href="{$item/guid/text()}"> más info... </a> 
+    
+  
+  </p>
+
+};
+
+declare function page:noticiasGenerales(){
+  
+  let $doc := doc ("https://elcomercio.pe/feed/ruedas-tuercas")
+  
+  for $item in $doc//item[1]
+
+  return
+  
+  <p> 
+  
+    <h1> {$item/title/text()} </h1> <br/>  
+    
+    Fecha: {$item/pubDate/text()} <br/>
+    
+    <h2> {$item/description/text()}</h2> 
+    
+    <a href="{$item/link/text()}"> mas info... </a> 
+    
+  
+  </p>
   
 };

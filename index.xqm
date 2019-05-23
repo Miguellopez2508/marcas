@@ -22,46 +22,14 @@ function page:start(
       <link rel="stylesheet" type="text/css" href="static/estilos.css"/>
     </head>
     <body>
-     	
-  <header>
+        
       
-			<div class="logo">
-                <p class="logoP2">M<span class="logoP4">o</span>t<span class="logoP4">o</span>r</p>
-                <p class="logoP1">Mund<span class="logoP4">o</span></p>
-                <img class="logoP3" src="static/carreteraLogo.png"/>
-            </div>
-      
-  </header>
   
-        <div id="links">
-        <ul>
-            <li>Inicio</li>
-            <a href="/formula1"><li>Formula1</li></a>
-            <a href="/formula2"><li>Formula2</li></a>
-            <a href="/nascar"><li>Nascar</li></a>
-            <a href="/audi"><li>Audi</li></a>
-            <a href="/noticias"><li> Noticias generales</li></a>
-        </ul>
+    <div class="height100"></div>
+	<div id="panelInicio">
+        <a href="/inicio">Entrar en el sitio</a>
     </div>
-	
-	
-	
-	<div id="contenedor">
-
-		<div id="principal">
-			<h1>Inicio</h1>
-			<div>  {page:formula1()} </div>
-			<div>  {page:formula2()} </div>
-			<div>  {page:nascar()} </div>
-			<div>  {page:noticiasGenerales()} </div>
-		</div>
-		
-	</div>
-
-	<footer>  Autores: Asier Salicio, Lander Arellano, Miguel Lopez
-	<br/> Email: mundo.motor@gmail.com
-	<br/> Fecha de creación: 23/5/2019
-	</footer>
+    <div class="height100"></div>
   
     </body>
   </html>
