@@ -80,9 +80,9 @@ function page:start(
   
     <h1> {$item/title/text()} </h1> <br/>  
     
-    Fecha: {$item/pubDate/text()} <br/>
+    <p class="fecha">Fecha:  {$item/pubDate/text()}</p>
     
-    <h2> {$item/description/text()}</h2> 
+    <p class="descripcion"> {$item/description/text()}</p> 
     
     <a href="{$item/guid/text()}"> más info... </a> 
     
@@ -103,9 +103,9 @@ declare function page:formula2(){
   
     <h1> {$item/title/text()} </h1> <br/>  
     
-    Fecha: {$item/pubDate/text()} <br/>
+    <p class="fecha">Fecha:  {$item/pubDate/text()}</p>
     
-    <h2> {$item/description/text()}</h2> 
+    <p class="descripcion"> {$item/description/text()}</p> 
     
     <a href="{$item/guid/text()}"> más info... </a> 
     
@@ -126,9 +126,9 @@ declare function page:nascar(){
   
     <h1> {$item/title/text()} </h1> <br/>  
     
-    Fecha: {$item/pubDate/text()} <br/>
+    <p class="fecha">Fecha:  {$item/pubDate/text()}</p>
     
-    <h2> {$item/description/text()}</h2> 
+    <p class="descripcion"> {$item/description/text()}</p> 
     
     <a href="{$item/guid/text()}"> más info... </a> 
     
@@ -149,9 +149,9 @@ declare function page:noticiasGenerales(){
   
     <h1> {$item/title/text()} </h1> <br/>  
     
-    Fecha: {$item/pubDate/text()} <br/>
+    <p class="fecha">Fecha:  {$item/pubDate/text()}</p>
     
-    <h2> {$item/description/text()}</h2> 
+    <p class="descripcion"> {$item/description/text()}</p> 
     
     <a href="{$item/link/text()}"> mas info... </a> 
     

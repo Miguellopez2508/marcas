@@ -2,7 +2,7 @@ body
 {
 	margin: 0;
 	margin-bottom: 40px;
-    background: url("https://www.radiorioja.es/wp-content/uploads/2018/04/75079878.jpg") no-repeat center;
+    background: url("https://www.xtrafondos.com/wallpapers/fibra-de-carbon-2739.jpg") no-repeat center;
     background-size: cover;
     font-family: "Arial";
 }
@@ -126,7 +126,7 @@ div h1
     margin-left:auto;
     margin-right: auto;
     width: 400px;
-    height: 33.33%;
+    height: 33.33em;
     //background-color: aqua;
     text-align: center;
 }
@@ -137,4 +137,16 @@ div h1
     border-color: #FFFFFF;
     padding: 20px;
     font-size: 20px;
+}
+
+.height100{
+    height: 33.33em;
+}
+
+.fecha
+{
+    font-size: 20px;
+}
+.descripcion{
+    font-size: 18px;
 }
