@@ -2,7 +2,7 @@ body
 {
 	margin: 0;
 	margin-bottom: 40px;
-    background: url("https://www.xtrafondos.com/wallpapers/fibra-de-carbon-2739.jpg") no-repeat center;
+    background: url("https://www.xtrafondos.com/wallpapers/fibra-de-carbon-2739.jpg") fixed;
     background-size: cover;
     font-family: "Arial";
 }
