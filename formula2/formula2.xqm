@@ -35,7 +35,7 @@ function page:start(
   
     <div id="links">
         <ul>
-            <li>Inicio</li>
+            <a href="/"><li>Inicio</li></a>
             <a href="/formula1"><li>Formula1</li></a>
             <a href="/formula2"><li>Formula2</li></a>
             <a href="/nascar"><li>Nascar</li></a>
