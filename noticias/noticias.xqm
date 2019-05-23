@@ -9,14 +9,14 @@ module namespace page = 'http://basex.org/modules/web-page';
  : @return HTML page
  :)
 declare
-  %rest:path("")
+  %rest:path("noticias")
   %output:method("xhtml")
   %output:omit-xml-declaration("no")
   %output:doctype-public("-//W3C//DTD XHTML 1.0 Transitional//EN")
   %output:doctype-system("http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd")
 function page:start(
 ) as element(Q{http://www.w3.org/1999/xhtml}html) {
-<html xmlns="http://www.w3.org/1999/xhtml">
+ <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
       <title>BaseX HTTP Services</title>
       <link rel="stylesheet" type="text/css" href="static/estilos.css"/>
@@ -37,10 +37,10 @@ function page:start(
         <ul>
             <li>Inicio</li>
             <li> <a href="/"> Formula1 </a></li>
-            <li> <a href="/temp3"> Formula2 </a></li>
-            <li> <a href="/temp4"> Nascar </a></li>
+             <li> <a href="/temp3"> Formula2 </a></li>
+             <li> <a href="/temp4"> Nascar </a></li>
             <li> <a href="/temp"> Audi </a></li>
-            <li class="verde"> <a href="/temp2"> Noticias generales </a></li>
+            <li class="verde"><a href="/temp2"> Noticias generales </a></li>
         </ul>
     </div>
 	
@@ -50,7 +50,7 @@ function page:start(
 
 		<div id="principal">
 			<h1>NOTICIAS PRINCIPALES</h1>
-			<div> {page:formula1()}</div>
+				<div> {page:noticiasGenerales()}</div>
 		</div>
 		
 	</div>
@@ -62,23 +62,11 @@ function page:start(
   
     </body>
   </html>
-  
-  
-  
 };
 
-declare function page:nombreFuncion(){
+declare function page:noticiasGenerales(){
   
-  let $doc := doc ("https://www.cochesyconcesionarios.com/rss/marcas/coches-kmcero.xml")
-  for $item in $doc //item
-  return
-  <p> {($item//title/text())} </p>
-  
-};
-
-declare function page:formula1(){
-  
-  let $doc := doc ("http://www.f1latam.com/rss/rss.php")
+  let $doc := doc ("https://elcomercio.pe/feed/ruedas-tuercas")
   
   for $item in $doc//item
 
@@ -92,7 +80,7 @@ declare function page:formula1(){
     
     <h2> {$item/description/text()}</h2> 
     
-    <a href="{$item/guid/text()}"> más info... </a> 
+    <a href="{$item/link/text()}"> mas info... </a> 
     
   
   </p>

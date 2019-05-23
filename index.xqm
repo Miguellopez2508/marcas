@@ -9,14 +9,14 @@ module namespace page = 'http://basex.org/modules/web-page';
  : @return HTML page
  :)
 declare
-  %rest:path("temp")
+  %rest:path("")
   %output:method("xhtml")
   %output:omit-xml-declaration("no")
   %output:doctype-public("-//W3C//DTD XHTML 1.0 Transitional//EN")
   %output:doctype-system("http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd")
 function page:start(
 ) as element(Q{http://www.w3.org/1999/xhtml}html) {
- <html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
       <title>BaseX HTTP Services</title>
       <link rel="stylesheet" type="text/css" href="static/estilos.css"/>
@@ -36,11 +36,11 @@ function page:start(
         <div id="links">
         <ul>
             <li>Inicio</li>
-            <li> <a href="/"> Formula1 </a></li>
-             <li> <a href="/temp3"> Formula2 </a></li>
-             <li> <a href="/temp4"> Nascar </a></li>
-            <li> <a href="/temp"> Audi </a></li>
-            <li class="verde"><a href="/temp2"> Noticias generales </a></li>
+            <li> <a href="/formula1"> Formula1 </a></li>
+            <li> <a href="/formula2"> Formula2 </a></li>
+            <li> <a href="/nascar"> Nascar </a></li>
+            <li> <a href="/audi"> Audi </a></li>
+            <li class="verde"> <a href="/noticias"> Noticias generales </a></li>
         </ul>
     </div>
 	
@@ -49,8 +49,8 @@ function page:start(
 	<div id="contenedor">
 
 		<div id="principal">
-			<h1>NOTICIAS PRINCIPALES</h1>
-				<div> {page:audi()}</div>
+			<h1>Inicio</h1>
+			<div> </div>
 		</div>
 		
 	</div>
@@ -62,28 +62,7 @@ function page:start(
   
     </body>
   </html>
-};
-
-declare function page:audi(){
   
-  let $doc := doc ("https://www.cochesyconcesionarios.com/rss/audi/noticias.xml")
   
-  for $item in $doc//item
-
-  return
-  
-  <p> 
-  
-    <h1> {$item/title/text()} </h1> <br/>  
-    
-    Fecha: {$item/pubDate/text()} <br/>
-    
-    <h2> {$item/description/text()}</h2> 
-    
-    <a href="{$item/link/text()}"> mas info... </a> 
-    
-  
-  </p>
-
   
 };

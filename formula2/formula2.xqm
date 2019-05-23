@@ -9,7 +9,7 @@ module namespace page = 'http://basex.org/modules/web-page';
  : @return HTML page
  :)
 declare
-  %rest:path("temp4")
+  %rest:path("formula2")
   %output:method("xhtml")
   %output:omit-xml-declaration("no")
   %output:doctype-public("-//W3C//DTD XHTML 1.0 Transitional//EN")
@@ -36,11 +36,11 @@ function page:start(
         <div id="links">
         <ul>
             <li>Inicio</li>
-            <li> <a href="/"> Formula1 </a></li>
-            <li> <a href="/temp3"> Formula2 </a></li>
-            <li> <a href="/temp4"> Nascar </a></li>
-            <li> <a href="/temp"> Audi </a></li>
-            <li class="verde"> <a href="/temp2"> Noticias generales </a></li>
+            <li> <a href="/formula1"> Formula1 </a></li>
+            <li> <a href="/formula2"> Formula2 </a></li>
+            <li> <a href="/nascar"> Nascar </a></li>
+            <li> <a href="/audi"> Audi </a></li>
+            <li class="verde"> <a href="/noticias"> Noticias generales </a></li>
         </ul>
     </div>
 	
@@ -50,7 +50,7 @@ function page:start(
 
 		<div id="principal">
 			<h1>NOTICIAS PRINCIPALES</h1>
-			<div> {page:nascar()}</div>
+			<div> {page:formula2()}</div>
 		</div>
 		
 	</div>
@@ -76,9 +76,9 @@ declare function page:nombreFuncion(){
   
 };
 
-declare function page:nascar(){
+declare function page:formula2(){
   
-  let $doc := doc ("https://www.autosport.com/rss/feed/nascar")
+  let $doc := doc ("https://www.autosport.com/rss/feed/f3")
   
   for $item in $doc//item
 
