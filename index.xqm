@@ -24,106 +24,20 @@ function page:start(
     <body>
         
       
-  
-    <div class="height100"></div>
+		
+    <div class="height100">
+		<div class="logo">
+				<p class="logoP2">M<span class="logoP4">o</span>t<span class="logoP4">o</span>r</p>
+				<p class="logoP1">Mund<span class="logoP4">o</span></p>
+		</div>
+	</div>
 	<div id="panelInicio">
+		<p id="textoBienvenida">Bienvenido a Mundo motor</p>
         <a href="/inicio">Entrar en el sitio</a>
     </div>
     <div class="height100"></div>
   
     </body>
   </html>
-  
-};
-
- declare function page:formula1(){
-  
-  let $doc := doc ("http://www.f1latam.com/rss/rss.php")
-  
-  for $item in $doc//item[1]
-
-  return
-  
-  <p> 
-  
-    <h1> {$item/title/text()} </h1> <br/>  
-    
-    Fecha: {$item/pubDate/text()} <br/>
-    
-    <h2> {$item/description/text()}</h2> 
-    
-    <a href="{$item/guid/text()}"> más info... </a> 
-    
-  
-  </p> 
-  
-};
-
-declare function page:formula2(){
-  
-  let $doc := doc ("https://www.autosport.com/rss/feed/f3")
-  
-  for $item in $doc//item[1]
-
-  return
-  
-  <p> 
-  
-    <h1> {$item/title/text()} </h1> <br/>  
-    
-    Fecha: {$item/pubDate/text()} <br/>
-    
-    <h2> {$item/description/text()}</h2> 
-    
-    <a href="{$item/guid/text()}"> más info... </a> 
-    
-  
-  </p>
-
-};
-
-declare function page:nascar(){
-  
-  let $doc := doc ("https://www.autosport.com/rss/feed/nascar")
-  
-  for $item in $doc//item[1]
-
-  return
-  
-  <p> 
-  
-    <h1> {$item/title/text()} </h1> <br/>  
-    
-    Fecha: {$item/pubDate/text()} <br/>
-    
-    <h2> {$item/description/text()}</h2> 
-    
-    <a href="{$item/guid/text()}"> más info... </a> 
-    
-  
-  </p>
-
-};
-
-declare function page:noticiasGenerales(){
-  
-  let $doc := doc ("https://elcomercio.pe/feed/ruedas-tuercas")
-  
-  for $item in $doc//item[1]
-
-  return
-  
-  <p> 
-  
-    <h1> {$item/title/text()} </h1> <br/>  
-    
-    Fecha: {$item/pubDate/text()} <br/>
-    
-    <h2> {$item/description/text()}</h2> 
-    
-    <a href="{$item/link/text()}"> mas info... </a> 
-    
-  
-  </p>
   
 };

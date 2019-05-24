@@ -49,7 +49,7 @@ function page:start(
 	<div id="contenedor">
 
 		<div id="principal">
-			<h1>NOTICIAS PRINCIPALES</h1>
+			<h1>Noticias de Formula 2</h1>
 			<div> {page:formula2()}</div>
 		</div>
 		
@@ -84,16 +84,16 @@ declare function page:formula2(){
 
   return
   
-  <div class="noticia"> 
+  <a href="{$item/link/text()}" class="enlaceNoticia"><div class="noticia"> 
   
-    <h2 class="titular"><a href="{$item/link/text()}">{$item/title/text()}</a></h2>    
+    <h2 class="titular">{$item/title/text()}</h2>    
     
     <p class="fecha">Fecha:  {$item/pubDate/text()}</p>
 	
 	<p class="descripcion">{$item/description/text()}</p>
     
   
-  </div>
+  </div></a>
 
   
 };

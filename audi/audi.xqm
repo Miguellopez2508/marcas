@@ -72,16 +72,16 @@ declare function page:audi(){
 
   return
   
-  <div class="noticia"> 
+  <a href="{$item/link/text()}" class="enlaceNoticia"><div class="noticia">  
   
-   <h2 class="titular"><a href="{$item/link/text()}">{$item/title/text()}</a></h2>    
+   <h2 class="titular">{$item/title/text()}</h2>    
     
    <p class="fecha"> Fecha:  {$item/pubDate/text()}</p>
     
     <p class="descripcion"> {$item/description/text()}</p> 
     
   
-  </div>
+  </div></a>
 
   
 };
