@@ -76,7 +76,7 @@ declare function page:audi(){
   
     <h1> {$item/title/text()} </h1> <br/>  
     
-    Fecha: <p class="fecha">{$item/pubDate/text()}</p>
+   <p class="fecha"> Fecha:  {$item/pubDate/text()}</p>
     
     <p class="descripcion"> {$item/description/text()}</p> 
     
