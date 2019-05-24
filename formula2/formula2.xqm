@@ -84,18 +84,16 @@ declare function page:formula2(){
 
   return
   
-  <p> 
+  <div class="noticia"> 
   
-    <h1> {$item/title/text()} </h1> <br/>  
+    <h2 class="titular"><a href="{$item/link/text()}">{$item/title/text()}</a></h2>    
     
     <p class="fecha">Fecha:  {$item/pubDate/text()}</p>
 	
 	<p class="descripcion">{$item/description/text()}</p>
     
-    <a href="{$item/guid/text()}"> más info... </a> 
-    
   
-  </p>
+  </div>
 
   
 };
