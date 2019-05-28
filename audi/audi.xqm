@@ -37,7 +37,7 @@ function page:start(
         <ul>
             <a href="/inicio"><li>Inicio</li></a>
             <a href="/formula1"><li>Formula1</li></a>
-            <a href="/formula2"><li>Formula2</li></a>
+            <a href="/formula3"><li>Formula3</li></a>
             <a href="/nascar"><li>Nascar</li></a>
             <a href="/audi"><li>Audi</li></a>
             <a href="/noticias"><li> Noticias generales</li></a>
@@ -49,7 +49,7 @@ function page:start(
 	<div id="contenedor">
 
 		<div id="principal">
-			<h1>NOTICIAS PRINCIPALES</h1>
+			<h1>Noticias de Audi</h1>
 				<div> {page:audi()}</div>
 		</div>
 		
